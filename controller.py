@@ -39,7 +39,7 @@ while True:
                 loadCellParser.resetMassObjects()
             elif cmd == 'TAKING':
                 loadCellParser.massObjectEvent()
-            elif cmd == 'REMINDER':
+            elif cmd == 'REMIND':
                 loadCellParser.attachReminder()
 
             # reset command list to empty
