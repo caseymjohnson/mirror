@@ -12,7 +12,7 @@ For pocketsphinx keyphrase search to work:
     keyphrase.list is the confidence thresholds for words of interest
     allVocab.dic is included in this repository should future users want to expand the keyphrase lists
 
-MIRROR must be spoken before giving command
+MIRROR must be spoken (then brief pause) before giving command
 This ensures that ambiant noise is not undesirably interpreted as command
 
 '''
