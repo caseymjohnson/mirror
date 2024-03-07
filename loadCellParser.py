@@ -183,8 +183,8 @@ def takeReading():
     )
     # initialize load cell 1
     cell1 = HX711(
-        dout_pin=5,
-        pd_sck_pin=6,
+        dout_pin=23,
+        pd_sck_pin=24,
         channel='A',
         gain=64
     )
@@ -194,6 +194,6 @@ def takeReading():
 
     # read each channel
     d0 = cell0.get_raw_data(num_measures=5)
-    d1 = cell0.get_raw_data(num_measures=5)
+    d1 = cell1.get_raw_data(num_measures=5)
     
     return d0, d1
