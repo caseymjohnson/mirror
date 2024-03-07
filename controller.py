@@ -24,6 +24,7 @@ while True:
             if 'reminder' in data[obj]:
                 if time.time() - data['obj']['timestamp'] > 24 * 60 * 1000:
                     reminders.sendReminder()
+                    data['obj']['timestamp'] = time.time()
 
     with open(speechParser.outputFile, 'r') as f:
         lines = f.readlines()
