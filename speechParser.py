@@ -36,5 +36,5 @@ for phrase in speech:
 
     # append to file
     with open(outputFile, 'a') as f:
-        f.write(text)
+        f.write(text + '\n')
     f.close()

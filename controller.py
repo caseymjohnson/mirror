@@ -29,7 +29,8 @@ while True:
         lines = f.readlines()
         # if we have valid command sandwich, respond then reset
         if 'MIRROR' in lines and 'CONFIRM' in lines and len(lines) == 3:
-            cmd = lines.split('MIRROR')[1].split('CONFIRM')
+            cmd = lines.split('MIRROR')[1].split('CONFIRM')[-1]
+            
 
             if cmd == 'ADD':
                 loadCellParser.addMassObject()
@@ -39,7 +40,7 @@ while True:
                 loadCellParser.resetMassObjects()
             elif cmd == 'TAKING':
                 loadCellParser.massObjectEvent()
-            elif cmd == 'REMIND':
+            elif cmd == 'SCHEDULE':
                 loadCellParser.attachReminder()
 
             # reset command list to empty
