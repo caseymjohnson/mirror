@@ -118,21 +118,6 @@ def massObjectEvent(massObjectFile, upTimeout=10, downTimeout=30):
     return True
 
 
-
-
-    # save the updated mass objects
-    with open(massObjectFile, 'w') as fp:
-        json.dump(data, fp)
-
-    return True
-
-
-
-
-    
-
-
-
 # for mirror command ADD
 # command should be given, then user should place on shelf within 10s
 def addMassObject(massObjectFile, timeout=10):
