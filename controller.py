@@ -30,7 +30,7 @@ while True:
         lines = f.readlines()
         # if we have valid command sandwich, respond then reset
         if 'MIRROR' in lines and 'CONFIRM' in lines and len(lines) == 3:
-            cmd = lines.split('MIRROR')[1].split('CONFIRM')[-1]
+            cmd = lines.split('MIRROR')[1].split('CONFIRM')[0]
             
 
             if cmd == 'ADD':
